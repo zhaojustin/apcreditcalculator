@@ -6,32 +6,17 @@ body {
     padding-top: 5%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    background-color: #1F2833;
 }
 
 h1 {
     font-weight: 800;
-    font-size: 5em;
+    font-size: 7vh;
     margin: 0;
-    color: #45A29E;
-    text-shadow: 3px 3px #66FCF1;
+    color: rgb(102, 137, 150);
+    text-shadow: 2px 2px #AEC6CF;
 } 
 
-h3 {
-    font-weight: 800;
-    font-size: 2.5em;
-    margin: 0;
-    margin-bottom: 1%;
-    color: #45A29E;
-    text-shadow: 2px 2px #66FCF1;
-}
-
 p {
-    font-weight: 800;
-    font-size: 1.5em;
-    color: #c5c6c7;
-}
-
-#pikachu {
-    width: 5%;
+    font-size: 2vh;
+    color: #1F2833;
 }

@@ -1,0 +1,32 @@
+{
+  "name": "apcreditcalculator",
+  "version": "1.0.0",
+  "description": "simplifies ap credit policies",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "semantic-ui": "^2.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaojustin/apcreditcalculator.git"
+  },
+  "keywords": [
+    "ap",
+    "credit",
+    "calculator",
+    "policies",
+    "college",
+    "board"
+  ],
+  "author": "Justin Zhao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhaojustin/apcreditcalculator/issues"
+  },
+  "homepage": "https://github.com/zhaojustin/apcreditcalculator#readme"
+}
