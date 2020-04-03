@@ -22,7 +22,7 @@
     <div class="ui divider" style="padding-bottom: 2%"></div>
 
     <!-- input AP scores -->
-    <div class="ui two column relaxed grid">
+    <div class="ui two column relaxed grid" style="padding-bottom: 2%">
 
         <!-- left column -->
         <div class="column">
@@ -93,6 +93,22 @@
             <div class="content" style="font-size: 2vh;">
                 Chemistry -
                 <div class="ui inline dropdown" id="chem">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Chinese Language and Culture -
+                <div class="ui inline dropdown" id="chinese">
                     <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
                     <i class="dropdown icon"></i>
                     <div class="menu">
@@ -269,6 +285,22 @@
             <div class="content" style="font-size: 2vh;">
                 Italian Language and Culture -
                 <div class="ui inline dropdown" id="italian">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Japanese Language and Culture -
+                <div class="ui inline dropdown" id="japanese">
                     <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
                     <i class="dropdown icon"></i>
                     <div class="menu">
@@ -607,21 +639,29 @@
         </div>
     </div>
 
+    <!-- divider -->
+    <div class="ui divider" style="padding-bottom: 2%"></div>
 
-    <button class="ui button" onclick="func()">hello</button>
-
-
-    </div>
-    <br><br>
-    <div class="row">
-        <select class="ui fluid search dropdown" multiple="" id="score-select">
-            <option value="">AP Test</option>
+    <!-- college selection -->
+    <h3>Select a college/university:</h3>
+    <div class="row" style="padding-bottom: 2%">
+        <select class="ui fluid search dropdown" id="college-select">
+            <option value="">College/University</option>
             <option value="art_history">AP Art History</option>
             <option value="biology">AP Biology</option>
             <option value="calc_ab">AP Calculus AB</option>
             <option value="calc_bc">AP Calculus BC</option>
         </select>
     </div>
+
+    <!-- submit button -->
+    <button class="ui big green button" onclick="calculate()">Calculate</button>
+
+    <!-- results -->
+    <div class="ui container" style="padding-bottom: 10%">
+
+    </div>
+
 </body>
 
 <!-- scripts -->

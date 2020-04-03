@@ -1,23 +1,18 @@
-var tests;
+var tests = ['art_history','biology','calc_ab','calc_bc','chem','chinese','comp_gov','csa','csp','lang','lit','apes','euro','french','german',
+    'human_geo','italian','japanese','latin','macro','micro','music_theory','phys_1','phys_2','phys_c_em','phys_c_m','psych','research','seminar',
+    'spanish_lang','spanish_lit','stats','art_2d','art_3d','drawing','gov','apush','whap']
 
-//initialize dropdowns
-$('#score-select').dropdown({
-    onChange: function () {
-        tests = $('#score-select').dropdown('get value');
-        addScoreInput(tests[tests.length-1]);
-    }
-});
+var scores = new Array(38);
 
 $('.ui.dropdown').dropdown();
 
-//create input and label every time new input is added
-function addScoreInput(test_name) {
-    var newInput = document.createElement('select');
-    newInput.setAttribute('test_name', 'empTable');
-}
-
-
-function func() {
-    alert( $('#art_history').dropdown('get text'));
+function calculate() {
+    //get all scores and match up with tests array
+    for(var i=0; i<tests.length; i++) {
+        //store score into scores array if it is not null
+        var score = $('#'+tests[i]).dropdown('get value')
+        if( score != 'n/a' ) scores[i] = score;
+    }
+    alert(scores);
 }
 
