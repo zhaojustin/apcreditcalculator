@@ -6,68 +6,627 @@
 <!-- body -->
 
 <body>
-    <div class="ui grid">
-        <!-- header and description -->
+    <!-- header and description -->
+    <div class="ui grid" style="padding-bottom: 2%">
         <div class="row">
             <h1>AP CREDIT CALCULATOR</h1>
         </div>
         <div class="row">
             <p>
-                Input your AP tests, scores, and up to three colleges that you're interested in.
+                Input your AP scores and a college to see which AP's will give you credit.
             </p>
         </div>
+    </div>
 
-        <!-- input AP scores -->
-        <div class="row">
-            <p>Select all:</p>
-            <select class="ui fluid search dropdown" multiple="" id="score-select">
-                <option value="">AP Test</option>
-                <option value="art_history">AP Art History</option>
-                <option value="biology">AP Biology</option>
-                <option value="calc_ab">AP Calculus AB</option>
-                <option value="calc_bc">AP Calculus BC</option>
-                <option value="chemistry">AP Chemistry</option>
-                <option value="chinese">AP Chinese Language and Culture</option>
-                <option value="comp_gov">AP Comparative Government and Politics</option>
-                <option value="csa">AP Computer Science A</option>
-                <option value="csp">AP Computer Science Principles</option>
-                <option value="lang">AP English Language and Composition</option>
-                <option value="lit">AP English Literature and Composition</option>
-                <option value="apes">AP Environmental Science</option>
-                <option value="euro">AP European History</option>
-                <option value="french">AP French Language and Culture</option>
-                <option value="german">AP German Language and Culture</option>
-                <option value="human_geo">AP Human Geography</option>
-                <option value="italian">AP Italian Language and Culture</option>
-                <option value="japanese">AP Japanese Language and Culture</option>
-                <option value="latin">AP Latin</option>
-                <option value="macro">AP Macroeconomics</option>
-                <option value="micro">AP Microeconomics</option>
-                <option value="music_theory">AP Music Theory</option>
-                <option value="phys_1">AP Physics 1</option>
-                <option value="phys_2">AP Physics 2</option>
-                <option value="phys_c_em">AP Physics C: Electricity and Magnetism</option>
-                <option value="phys_c_m">AP Physics C: Mechanics</option>
-                <option value="psych">AP Psychology</option>
-                <option value="research">AP Research</option>
-                <option value="seminar">AP Seminar</option>
-                <option value="spanish_lang">AP Spanish Language and Culture</option>
-                <option value="spanish_lit">AP Spanish Literature and Culture</option>
-                <option value="stats">AP Statistics</option>
-                <option value="art_2d">AP Studio Art: 2-D Design Portfolio</option>
-                <option value="art_3d">AP Studio Art: 3-D Design Portfolio</option>
-                <option value="art_drawing">AP Studio Art: Drawing Portfolio</option>
-                <option value="gov">AP United States Government and Politics</option>
-                <option value="apush">AP United States History</option>
-                <option value="whap">AP World History</option>
-            </select>
+    <!-- divider -->
+    <div class="ui divider" style="padding-bottom: 2%"></div>
+
+    <!-- input AP scores -->
+    <div class="ui two column relaxed grid">
+
+        <!-- left column -->
+        <div class="column">
+            <div class="content" style="font-size: 2vh;">
+                Art History -
+                <div class="ui inline dropdown" id="art_history">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Biology -
+                <div class="ui inline dropdown" id="biology">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Calculus AB -
+                <div class="ui inline dropdown" id="calc_ab">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Calculus BC -
+                <div class="ui inline dropdown" id="calc_bc">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Chemistry -
+                <div class="ui inline dropdown" id="chem">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Comparative Government and Politics -
+                <div class="ui inline dropdown" id="comp_gov">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Computer Science A -
+                <div class="ui inline dropdown" id="csa">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Computer Science Principles -
+                <div class="ui inline dropdown" id="csp">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                English Language and Composition -
+                <div class="ui inline dropdown" id="lang">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                English Literature and Composition -
+                <div class="ui inline dropdown" id="lit">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Environmental Science -
+                <div class="ui inline dropdown" id="apes">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                European History -
+                <div class="ui inline dropdown" id="euro">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                French Language and Culture -
+                <div class="ui inline dropdown" id="french">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                German Language and Culture -
+                <div class="ui inline dropdown" id="german">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Human Geography -
+                <div class="ui inline dropdown" id="human_geo">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Italian Language and Culture -
+                <div class="ui inline dropdown" id="italian">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Latin -
+                <div class="ui inline dropdown" id="latin">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Macroeconomics -
+                <div class="ui inline dropdown" id="macro">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- right column -->
+        <div class="column">
+            <div class="content" style="font-size: 2vh;">
+                Microeconomics -
+                <div class="ui inline dropdown" id="micro">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Music Theory -
+                <div class="ui inline dropdown" id="music_theory">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Physics 1 -
+                <div class="ui inline dropdown" id="phys_1">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Physics 2 -
+                <div class="ui inline dropdown" id="phys_2">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Physics C: Electricity and Magnetism -
+                <div class="ui inline dropdown" id="phys_c_em">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Physics C: Mechanics -
+                <div class="ui inline dropdown" id="phys_c_m">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Psychology -
+                <div class="ui inline dropdown" id="psych">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Research -
+                <div class="ui inline dropdown" id="research">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Seminar -
+                <div class="ui inline dropdown" id="seminar">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Spanish Language and Culture -
+                <div class="ui inline dropdown" id="spanish_lang">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Spanish Literature and Culture -
+                <div class="ui inline dropdown" id="spanish_lit">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Statistics -
+                <div class="ui inline dropdown" id="stats">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Studio Art: 2-D Art and Design -
+                <div class="ui inline dropdown" id="art_2d">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Studio Art: 3-D Art and Design -
+                <div class="ui inline dropdown" id="art_3d">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                Drawing -
+                <div class="ui inline dropdown" id="drawing">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                United States Government and Politics -
+                <div class="ui inline dropdown" id="gov">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                United States History -
+                <div class="ui inline dropdown" id="apush">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div> <br>
+
+            <div class="content" style="font-size: 2vh;">
+                World History -
+                <div class="ui inline dropdown" id="whap">
+                    <div class="text" style="color: rgb(102, 137, 150);">n/a</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-text="n/a">n/a</div>
+                        <div class="item" data-text="1">1</div>
+                        <div class="item" data-text="2">2</div>
+                        <div class="item" data-text="3">3</div>
+                        <div class="item" data-text="4">4</div>
+                        <div class="item" data-text="5">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <button class="ui button" onclick="func()">hello</button>
+
+
+    </div>
+    <br><br>
+    <div class="row">
+        <select class="ui fluid search dropdown" multiple="" id="score-select">
+            <option value="">AP Test</option>
+            <option value="art_history">AP Art History</option>
+            <option value="biology">AP Biology</option>
+            <option value="calc_ab">AP Calculus AB</option>
+            <option value="calc_bc">AP Calculus BC</option>
+        </select>
     </div>
 </body>
 
 <!-- scripts -->
 <script>
-    
+
 </script>
 
 <script src="js/semantic.js"></script>
