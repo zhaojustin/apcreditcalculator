@@ -20,3 +20,7 @@ p {
     font-size: 2vh;
     color: #1F2833;
 }
+
+ul {
+    line-height: 200%;
+}

@@ -328,7 +328,11 @@
                         <div class="item" data-text="5">5</div>
                     </div>
                 </div>
-            </div> <br>
+            </div>
+        </div>
+
+        <!-- right column -->
+        <div class="column">
 
             <div class="content" style="font-size: 2vh;">
                 Macroeconomics -
@@ -344,11 +348,8 @@
                         <div class="item" data-text="5">5</div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> <br>
 
-        <!-- right column -->
-        <div class="column">
             <div class="content" style="font-size: 2vh;">
                 Microeconomics -
                 <div class="ui inline dropdown" id="micro">
@@ -654,16 +655,27 @@
     <button class="ui green button" onclick="calculate()">Calculate</button>
 
     <!-- results -->
-    <div class="ui container" style="padding-bottom: 10%">
+    <div class="ui container" style="padding-top: 5%; padding-bottom: 5%">
+        <!-- hidden div -->
+        <div class="initially_hidden" style="visibility: hidden;">
+            <h2>At <span id="selected_college_header" style="color: rgb(77, 108, 119);" ></span>,</h2>
+            <div class="ui two column relaxed grid" style="padding-bottom: 10%">
+                <!-- you will receive credit for -->
+                <div class="column">
+                    <h3>You <span style="color:#00924b">will</span> receive credit for:</h3>
+                    <div id="get_credit_column" style="font-size: 2vh;"></div>
+                </div>
 
+                <!-- you will not receive credit for -->
+                <div class="column">
+                    <h3>You <span style="color:rgb(179, 0, 65)">will not</span> receive credit for:</h3>
+                    <div id="no_credit_column" style="font-size: 2vh;"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
-
-<!-- scripts -->
-<script>
-
-</script>
 
 <script src="js/semantic.js"></script>
 <script src="js/data.js"></script>
