@@ -11,10 +11,24 @@
         <div class="row">
             <h1>AP CREDIT CALCULATOR</h1>
         </div>
+        <div class="row" style="padding-bottom: 4%">
+            <h2 style="font-size: 2vh">by <a href="https://www.justinzhao.net">Justin Zhao</a></h2>
+        </div>
         <div class="row">
-            <p>
-                Input your AP scores and a college to see which AP's will give you credit.
-            </p>
+            <p>Input your AP scores and a college to see which AP's will give you credit. Updated for the 2020 - 2021 school year.</p>
+        </div>
+    </div>
+
+    <!-- disclaimer -->
+    <div class="ui grid" style="padding-bottom: 3%" id="disclaimer">
+        <div class="ui icon message">
+            <i class="exclamation triangle icon orange"></i>
+            <div class="content">
+                <div class="header">
+                    Keep in mind that many colleges limit the amount of APs you can use as credit PER category.
+                    For instance, taking 4 physics APs may not be more beneficial than taking 1 physics AP test.
+                </div>
+            </div>
         </div>
     </div>
 
@@ -655,11 +669,11 @@
     <button class="ui green button" onclick="calculate()">Calculate</button>
 
     <!-- results -->
-    <div class="ui container" style="padding-top: 5%; padding-bottom: 5%">
+    <div class="ui container" style="padding-top: 5%;">
         <!-- hidden div -->
         <div class="initially_hidden" style="visibility: hidden;">
-            <h2>At <span id="selected_college_header" style="color: rgb(77, 108, 119);" ></span>,</h2>
-            <div class="ui two column relaxed grid" style="padding-bottom: 10%">
+            <h2>At <span id="selected_college_header" style="color: rgb(77, 108, 119);"></span>,</h2>
+            <div class="ui two column relaxed grid" style="padding-bottom: 0%">
                 <!-- you will receive credit for -->
                 <div class="column">
                     <h3>You <span style="color:#00924b">will</span> receive credit for:</h3>
@@ -674,7 +688,6 @@
             </div>
         </div>
     </div>
-
 </body>
 
 <script src="js/semantic.js"></script>
